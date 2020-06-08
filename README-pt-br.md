@@ -1,9 +1,9 @@
 # KAS-Sass
 
-<p align="center">![Nossa logo e slogan](images/Logo.jpg)</p>
+![Nossa logo e slogan](images/Logo.jpg)
 <p align="center">Foto 1 - Nossa logo e slogan.</p>
 
-To see this file in english, access [README.md](README.md)
+To see this file in english, access [README.md](https://github.com/AlarmedEwe/KAS-Sass)
 
 ## Nosso objetivo
 KAS-Sass é um framework web brasileiro para desenvolvimento front-end cujo objetivo é agilizar a produção de layouts e estilos CSS mas sem "engessar" o desenvolvedor a um estilo único, dando a ele liberdade para modificar de forma rápida suas características, tudo isso através do nosso arquivo de configuração.
