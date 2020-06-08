@@ -1,0 +1,44 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+/* Color schema */
+$background : #FAFAFA;
+$font-color : #444;
+$dark-color : #000;
+$light-color: #CCC;
+
+$primary    : #C40;
+$secundary  : #003F78;
+$terciary   : #000;
+
+$st-dark    : #B40;                 // Dark variation to primary color
+$nd-dark    : #069;                 // Dark variation to secundary color
+$td-dark    : rgb(238, 228, 228);   // Dark variation to terciary color
+$st-light   : #F90;                 // Light variation to primary color
+$nd-light   : #004FBB;              // Light variation to secundary color
+$td-light   : #073;                 // Light variation to terciary color
+
+$st-gradient: linear-gradient($st-light,$primary);      // Gradient to primary color
+$nd-gradient: linear-gradient($nd-light,$secundary);    // Gradient to secundary color
+$td-gradient: linear-gradient($td-light ,$terciary);    // Gradient to terciary color
+
+$st-color   : #FFF;
+$nd-color   : #FFF;
+$td-color   : #FFF;
+
+/* Configurations */
+$menu-size  : 50px;     
+$bradius    : 0.25rem;  // Border radius to elements like buttons
+$link-cursor: pointer;  // Cursor to link
+$main-cursor: default;  // Default cursor
+$load-cursor: progress; // Cursor while loading
+
+    /* Fonts */
+    $main-font  : "Open Sans", "Lato", sans-serif;  // Default font
+    $hfont      : "Arial", sans-serif;              // Headers fonts
+
+    /* Spacing */
+    $container  : 1200px;   // Size of page container
+    $menu-mob   : 1190px;   // Size of menu to become a hamburguer menu
+    $menu-min   : 450px;
+    $menu-height: 73px;     // Height of menu

@@ -1,0 +1,11 @@
+/* Align classes */
+.aright { text-align: right; }
+.acenter{ text-align: center; }
+.aleft  { text-align: left; }
+.ajust  { text-align: justify; }
+@media (min-width: 1200px){
+    .aright-pc { text-align: right; }
+    .acenter-pc{ text-align: center; }
+    .aleft-pc  { text-align: left; }
+}
+section.acenter { padding: 20px; }

@@ -1,0 +1,167 @@
+.form {
+    input:not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
+    select, textArea {
+        padding: 0.375rem 0.75rem;
+        border-radius: $bradius;
+        border: 1px solid #CCC;
+        margin-bottom: 0.5em;
+        width: 100%;
+        display: block;
+        color: #444;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder, &::placeholder,
+        &:-ms-input-placeholder, &::-ms-input-placeholder
+        {
+            color: #6c757d;
+            opacity: 1;
+        }
+        
+        &:disabled, &[readonly] {
+            background-color: #e9ecef;
+            opacity: 1;
+        }
+        
+        &:active, &:focus {
+            box-shadow: 0 0 4px $primary;
+        }
+    }
+    input, textArea { font-size: 1rem; }
+    select {
+        width: calc(100% - 20px);
+        font-size: 0.8rem;
+    }
+    &-primary {
+        input, select, textArea {
+            &:active, &:focus {
+                border-color: $primary;
+                box-shadow: 0 0 2px 1px $st-light;
+            }
+        }
+    }
+    &-secundary {
+        input, select, textArea {
+            &:active, &:focus {
+                border-color: $secundary;
+                box-shadow: 0 0 2px 1px $nd-light;
+            }
+        }
+    }
+    input[type="checkbox"]{
+        display: none;
+        & + label::before {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: $primary;
+            color: $st-color;
+            font-size: 10pt;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            font-family: monospace;
+            outline: $primary auto 2px;
+        }
+        &:not(:checked) + label::before {
+            content: "\20";
+            vertical-align: calc(-0.5rem / 5);
+        }
+        &:checked + label::before {
+            content: "\2714";
+            vertical-align: calc(0.5rem / 5);
+        }
+    }
+}
+.input-gp {
+    position: relative;
+    display: -ms-flexbox;
+        display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    width: 100%;
+    margin-bottom: 0.5em;
+    
+    input:not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]){
+        &:hover, &:active, &:focus {
+            box-shadow: none;
+        }
+    }
+    
+    & > input:not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]) {
+        position: relative;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+        width: 1%;
+        margin-bottom: 0;
+    }
+    & > input:not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]) + input:not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]) {
+        margin-left: -1px;
+    }
+    
+    & > .input-ap,
+    & > .input-ap > .btn,
+    & > .input-ap > label,
+    & > .input-prep:not(:first-child) > .btn,
+    & > .input-prep:not(:first-child) > label,
+    & > .input-prep:first-child > .btn:not(:first-child),
+    & > .input-prep:first-child > label:not(:first-child),
+    .input-prep + input:not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"])
+    {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    & > .input-prep,
+    & > .input-prep > .btn,
+    & > .input-prep > label,
+    & > .input-ap:not(:last-child) > .btn,
+    & > .input-ap:not(:last-child) > label,
+    & > .input-ap > .btn:not(:last-child),
+    & > .input-ap > label:not(:last-child),
+    input:not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]):not(:last-child)
+    {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .input-prep, .input-ap {
+        display: -ms-flexbox;
+            display: flex;
+        
+        .btn {
+            position: relative;
+            z-index: 2;
+            &:focus {
+                z-index: 3;
+            }
+        }
+        * + * {
+            margin-left: -1px;
+        }
+    }
+    .input-prep {
+        margin-right: -1px;
+    }
+    .input-ap {
+        margin-left: -1px;
+    }
+    label {
+        display: -ms-flexbox;
+            display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+}
+label { cursor: $link-cursor; }

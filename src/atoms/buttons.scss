@@ -1,0 +1,89 @@
+.btn, .side-btn {
+    border: none;
+    border-radius: $bradius;
+    text-decoration: none;
+    cursor: $link-cursor;
+    font-size: 1rem;
+}
+.btn {
+    display: inline-block;
+    padding: 5px;
+    
+    &-lg {
+        font-size: 1.2rem;
+        padding: 7px;
+    }
+    &-xg {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+    
+    &-primary, &-secundary, &-std,
+    &-success, &-warning, &-danger{
+        border: 1px solid;
+    }
+    &-std {
+        border-color: $font-color;
+        background: none;
+        color: $dark-color;
+        &:hover, &:focus, &:active {
+            background-color: rgba(0,0,0,.05);
+        }
+    }
+    &-primary {
+        background-image: $st-gradient;
+        border-color: $primary;
+        color: $st-color;
+        &:hover, &:focus, &:active {
+            background-color: $primary;
+        }
+    }
+    &-secundary {
+        background-image: $nd-gradient;
+        border-color: $secundary;
+        color: $nd-color;
+        &:hover, &:focus, &:active {
+            background-color: $secundary;
+        }
+    }
+    &-success {
+        background-image: linear-gradient(#00AA3F,#00783F);
+        background-color: #00783F;
+        border-color: $primary;
+        &:hover, &:focus, &:active { background-color: #00783F; }
+    }
+    &-warning {
+        background-image: linear-gradient(#EC0,#CA0);
+        background-color: #FF0;
+        border-color: #CA0;
+        &:hover, &:focus, &:active { background-color: #860; }
+    }
+    &-danger {
+        background-image: linear-gradient(#F00,#EC121F);
+        background-color: #F00;
+        border-color: #E11;
+        &:hover, &:focus, &:active { background-color: #800; }
+    }
+    &-success, &-warning, &-danger {
+        color: #FFF;
+    }
+    &-primary, &-secundary,
+    &-success, &-warning, &-danger {
+        &:hover, &:focus, &:active { background-image: none; color: #DDD; }
+    }
+}
+.side-btn {
+    display: block;
+    position: fixed;
+    bottom: 6rem;
+    padding: 10px;
+    
+    &-left {
+        left: 0;
+        border-radius: 0 $bradius $bradius 0;
+    }
+    &-right {
+        right: 0;
+        border-radius: $bradius 0 0 $bradius;
+    }
+}
