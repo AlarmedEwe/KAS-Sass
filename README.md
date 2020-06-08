@@ -1,6 +1,6 @@
 # KAS-Sass
 
-![Our logo and slogan](images/Logo.jpg)
+<p align="center">![Our logo and slogan](images/Logo.jpg)</p>
 <p align="center">Picture 1 - Our logo and slogan.</p>
 
 Para ler este arquivo em português, acesse [README-pt-br.md](README-pt-br.md)
