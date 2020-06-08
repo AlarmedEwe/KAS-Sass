@@ -1,0 +1,56 @@
+.btn-gp {
+    display: inline-block;
+    
+    .btn{
+        margin: 0;
+        
+        &:not(:first-child):not(:last-child){
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+        }
+        &:not(:last-child){
+            margin-right: -0.3rem;
+        }
+        &:first-child {
+            border-radius: $bradius 0 0 $bradius;
+            border-right: none;
+        }
+        &:last-child {
+            border-radius: 0 $bradius $bradius 0;
+            border-left: none;
+        }
+    }
+}
+.side-btn-gp {
+    display: block;
+    position: fixed;
+    bottom: 1rem;
+    
+    .side-btn {
+        display: block;
+        position: relative;
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+    }
+    
+    &-left {
+        left: 0px;
+        .side-btn:first-child {
+            border-radius: 0 $bradius 0 0;
+        }
+        .side-btn:last-child {
+            border-radius: 0 0 $bradius 0;
+        }
+    }
+    &-right {
+        right: 0px;
+        .side-btn:first-child {
+            border-radius: $bradius 0 0 0;
+        }
+        .side-btn:last-child {
+            border-radius: 0 0 0 $bradius;
+        }
+    }
+}

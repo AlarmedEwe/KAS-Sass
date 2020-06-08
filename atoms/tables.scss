@@ -1,0 +1,30 @@
+.tb {
+    thead th {
+        border-bottom: 2px solid;
+        padding: 5px 2px;
+    }
+    &-hover {
+        tbody tr:hover {
+            &:nth-child(odd),&:nth-child(even) {
+                background-color: rgba(0,0,0,.2);
+            }
+        }
+    }
+    &-zebra-odd {
+        tbody tr:nth-child(odd) {
+            background-color: rgba(0,0,0,.1);
+        }
+    }
+    &-zebra-even {
+        tbody tr:nth-child(even) {
+            background-color: rgba(0,0,0,.1);
+        }
+    }
+    &-col {
+        @media (min-width: 1200px){
+            tr td:not(:first-child), tr th:not(:first-child) {
+                border-left: 1px dashed #666;
+            }
+        }
+    }
+}

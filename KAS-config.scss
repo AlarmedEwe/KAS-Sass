@@ -1,0 +1,42 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+/* Color schema */
+$background : #FAFAFA;
+$font-color : #444;
+$dark-color : #000;
+$light-color: #CCC;
+
+$primary    : #C40;
+$secundary  : #003F78;
+$terciary   : #000;
+
+$st-dark    : #B40;
+$nd-dark    : #069;
+$td-dark    : rgb(238, 228, 228);
+$st-light   : #F90;
+$nd-light   : #004FBB;
+$td-light   : #073;
+
+$st-gradient: linear-gradient($st-light,$primary);
+$nd-gradient: linear-gradient($nd-light,$secundary);
+$td-gradient: linear-gradient($td-light ,$terciary);
+
+$st-color   : #FFF;
+$nd-color   : #FFF;
+$td-color   : #FFF;
+
+/* Configurations */
+$menu-size  : 50px;
+$bradius    : 0.25rem;
+$link-cursor: pointer;
+$main-cursor: default;
+$load-cursor: progress;
+
+$main-font  : "Open Sans", "Lato", sans-serif;
+$hfont      : "Arial", sans-serif;
+
+$container  : 1200px;
+$menu-mob   : 1190px;
+$menu-min   : 450px;
+$menu-height: 73px;
