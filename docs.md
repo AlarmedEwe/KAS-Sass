@@ -42,7 +42,7 @@
     <header class="menu menu-fixed bg-dark">
         <div class="mob-menu">
             <h1>
-                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <a href="index.md" style="display: flex; align-items: center; text-decoration: none;">
                     <img height="40" src="images/logo-64.png" alt="">
                     <span>KAS-SASS</span>
                 </a>
@@ -50,7 +50,7 @@
             <div class="open-menu"><i class="fa fa-bars"></i></div>
         </div>
         <ul>
-            <li><a href="docs.html">Documentação</a></li>
+            <li><a href="docs.md">Documentação</a></li>
         </ul>
     </header>
 
