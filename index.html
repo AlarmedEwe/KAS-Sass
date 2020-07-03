@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KAS-SASS</title>
+    <link rel="shortcut icon" href="images/logo-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" />
+    <link rel="stylesheet" href="_css/KAS.css">
+    <style>
+        a { color: #D80; }
+        a:hover, a:active, a:focus { color: #B50; }
+        main { padding-bottom: 1em; padding-top: 1em; }
+    </style>
+    <style>
+        .parallax {
+            height: 50vh;
+            min-height: 300px;
+            align-items: center;
+        }
+        .code {
+            background-color: rgb(40,44,52);
+            color: #CCC;
+            border: none;
+            border-left: 4pt solid #0CF;
+            resize: none;
+            font-size: 1.5em;
+            overflow-y: hidden;
+            width: calc(100% - 10px);
+            margin: auto;
+            padding: 5px 0;
+        }
+        .fab {
+            font-size: 1.5em;
+        }
+        .code::selection {
+            background-color: #C70;
+            color: #0CF;
+        }
+        .no-select {
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu menu-fixed bg-dark">
+        <div class="mob-menu">
+            <h1>
+                <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                    <img height="40" src="images/logo-64.png" alt="">
+                    <span>KAS-SASS</span>
+                </a>
+            </h1>
+            <div class="open-menu"><i class="fa fa-bars"></i></div>
+        </div>
+        <ul>
+            <li><a href="docs.html">Documentação</a></li>
+        </ul>
+    </header>
+
+    <main style="padding-top: 0">
+        <div class="parallax bg-st-gradient">
+            <p><img src="./images/logo-128.png" alt=""></p>
+            <p>O framework brasileiro em <i class="fab fa-sass"></i>.</p>
+            <a href="KAS.zip" download class="btn btn-secundary">Download KAS</a>
+        </div>
+        <div class="col col-2">
+            <h1>Instale o <i class="fab fa-sass" style="font-size: 1.5em; font-weight: normal;"></i></h1>
+            <div class="acenter">
+                <p>Para utilizar o Framework KAS é preciso ter instalado na sua máquina o <a href="https://sass-lang.com/" target="_blank" class="fab fa-sass"></a>, que pode ser adquirido com a ajuda do <a href="https://nodejs.org/en/" target="_blank" class="fab fa-node-js"> Node</a>.</p>
+                <div class="code" onclick="window.getSelection().selectAllChildren(this)" style="max-width: calc(10em + 4pt)">
+                    <span class="no-select">$ </span>npm install -g sass
+                </div>
+            </div>
+        </div>
+        <div class="col col-2">
+            <h1>Compile seu código</h1>
+            <div class="acenter">
+                <p style="margin-bottom: 0">Com o <i class="fab fa-sass"></i> instalado na máquina, basta abrir o Prompt de Comando, acessar a pasta do seu projeto e executar o seguinte código:</p>
+                <p style="font-size: .8em">(Não se esqueça de substituir "_sass" pelo diretório de origem e "_css" pelo diretório de destino)</p>
+                <div class="code" onclick="window.getSelection().selectAllChildren(this)" style="max-width: calc(20em + 4pt)">
+                    <span class="no-select">$ </span>sass --watch _sass/KAS.scss _css/KAS.css
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary acenter">
+        <p style="margin-bottom: .25em;">&copy;2020 &bull; Developed by <a href="https://github.com/AlarmedEwe" target="_blank">GM-Luiz</a></p>
+        <p style="font-size: .8em;"><a href="mailto:">Reportar erro ou entrar em contato.</a></p>
+    </footer>
+
+    <script src="js/KAS.js"></script>
+</body>
+</html>
